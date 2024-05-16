@@ -93,7 +93,8 @@
 
 li { list-style: none; }
 
-a { text-decoration: none; }
+a { text-decoration: none;
+color:white; }
 
 a,
 img,
@@ -516,7 +517,9 @@ body { background: var(--white); }
 
 
 
-
+.user-space {
+ color:white
+}
 
 /*-----------------------------------*\
  * #PACKAGE

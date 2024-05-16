@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="payment.css">
+  <title>Payment</title>
+</head>
+<body>
+  <header>
+    <h1>Travel Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Destinations</a></li>
+        <li><a href="book.html">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="payment-section">
+      <h2>Complete Your Booking</h2>
+      <form id="paymentForm">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="text" id="expirationDate" name="expirationDate" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+
+        <label for="name">Cardholder Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <input type="submit" value="Pay Now" onclick="processPayment()">
+      </form>
+      <div id="paymentSuccess" style="display: none;">
+        <h2>Payment Successful!</h2>
+        <p>Thank you for your booking. Enjoy your trip!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Travel Website</p>
+  </footer>
+
+  <script>
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Get form values
+      var cardNumber = document.getElementById('cardNumber').value;
+      var expirationDate = document.getElementById('expirationDate').value;
+      var cvv = document.getElementById('cvv').value;
+      var name = document.getElementById('name').value;
+
+      // Process the payment (you would need to integrate with a payment gateway here)
+      processPayment(cardNumber, expirationDate, cvv, name);
+    });
+
+    function processPayment(cardNumber, expirationDate, cvv, name) {
+      // Simulating a successful payment
+      var paymentSuccess = document.getElementById('paymentSuccess');
+      paymentSuccess.style.display = 'block';
+    }
+  </script>
+</body>
+</html>

@@ -4,7 +4,7 @@ Tourly - Travel agancy
 
 <ion-icon name="call-outline"></ion-icon>
 For Further Inquires :
-+01 (123) 4567 90
++91 7869504834
 
 alt = Tourly logo
 

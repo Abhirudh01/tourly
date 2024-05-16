@@ -1,0 +1,74 @@
+input:hover {
+    transform: scale(1.1);
+    color: black;
+    background-color: lightgray;
+}
+
+h2 {
+    text-align: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: orangered;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   background-color: lightsteelblue;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+button {
+    margin-top: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4c8eaf;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #458ca0;
+}
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px; /* Adjust the border radius as needed */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+}
